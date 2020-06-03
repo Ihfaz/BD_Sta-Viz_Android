@@ -38,7 +38,7 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ListViewHolder
         Case caseEntry = cases.get(position);
 
         holder.location.setText(caseEntry.getLocation());
-        holder.nCases.setText(String.valueOf(caseEntry.getnCase()));
+        holder.populations.setText(String.valueOf(caseEntry.getPopulation()));
     }
 
     // Gets the size of the arraylist holding the cases
@@ -52,13 +52,13 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ListViewHolder
 
     // Custom viewholder class to define the textviews for the case data fields
     public static class ListViewHolder extends RecyclerView.ViewHolder {
-        TextView location, nCases;
+        TextView location, populations;
 
         // Initialize all the TextViews which hold the various field data for the cases
         public ListViewHolder(View view) {
             super(view);
             location = view.findViewById(R.id.location);
-            nCases = view.findViewById(R.id.n_cases);
+            populations = view.findViewById(R.id.n_cases);
         }
     }
 }

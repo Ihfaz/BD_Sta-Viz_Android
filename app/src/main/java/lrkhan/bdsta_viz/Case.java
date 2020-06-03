@@ -9,12 +9,12 @@ package lrkhan.bdsta_viz;
 public class Case {
 
     private String location;    // Name of location (Districts/Dhaka Zones)
-    private int nCase;          // Number of cases
+    private int population;     // Population count
 
     // Constructors
-    public Case(String location, int nCase) {
+    public Case(String location, int population) {
         this.location = location;
-        this.nCase = nCase;
+        this.population = population;
     }
 
     // Getters and Setters
@@ -26,11 +26,11 @@ public class Case {
         this.location = location;
     }
 
-    public int getnCase() {
-        return nCase;
+    public int getPopulation() {
+        return population;
     }
 
-    public void setnCase(int nCase) {
-        this.nCase = nCase;
+    public void setPopulation(int population) {
+        this.population = population;
     }
 }

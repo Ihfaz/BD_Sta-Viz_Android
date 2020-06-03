@@ -123,7 +123,7 @@ public class ListFragment extends Fragment {
         Collections.sort(caseList, new Comparator<Case>() {
             @Override
             public int compare(Case obj1, Case obj2) {  // Compare number of cases
-                return obj2.getnCase() - obj1.getnCase();
+                return obj2.getPopulation() - obj1.getPopulation();
             }
         });
 

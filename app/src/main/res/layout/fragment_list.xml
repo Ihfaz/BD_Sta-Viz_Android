@@ -9,17 +9,15 @@
     tools:context=".ListFragment">
 
 
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content" >
 
         <LinearLayout
             android:id="@+id/linearLayout"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="12dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -27,16 +25,17 @@
 
             <LinearLayout
                 android:id="@+id/heading"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@drawable/table_heading_back"
                 android:orientation="horizontal">
 
                 <TextView
                     android:id="@+id/loc_h"
                     android:layout_width="190dp"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/table_heading_back"
                     android:padding="8dp"
+                    android:layout_marginStart="8dp"
                     android:text="Location"
                     android:textColor="@color/white"
                     android:textSize="24sp"
@@ -44,9 +43,8 @@
 
                 <TextView
                     android:id="@+id/cases_h"
-                    android:layout_width="180dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/table_heading_back"
                     android:padding="8dp"
                     android:text="Population"
                     android:textColor="@color/white"
@@ -59,7 +57,7 @@
                 android:id="@+id/rv"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/white"/>
+                android:background="@color/white" />
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
