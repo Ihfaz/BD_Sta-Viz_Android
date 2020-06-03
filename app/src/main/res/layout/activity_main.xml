@@ -13,7 +13,6 @@
         />
 
     <!--Bottom Navigation bar properties-->
-
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/navbar"
         android:layout_width="match_parent"
