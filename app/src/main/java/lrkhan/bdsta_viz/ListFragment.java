@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -31,11 +32,11 @@ import java.util.Comparator;
  * @author Ihfaz Tajwar                                                     *
  ****************************************************************************/
 
-public class ListFragment extends Fragment {
-
+public class ListFragment extends Fragment implements View.OnClickListener {
     private RecyclerView recyclerView;
     private RecyclerView.Adapter adapter;
     private RecyclerView.LayoutManager layoutManager;
+    private LinearLayout country;
 
     @RequiresApi(api = Build.VERSION_CODES.O)
     @Nullable
@@ -43,6 +44,8 @@ public class ListFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_list, container, false);
 
+        country = rootView.findViewById(R.id.country_name);
+        country.setOnClickListener(this);
         // Initialize recycle view and layoutManager
         recyclerView = rootView.findViewById(R.id.rv);
         layoutManager = new LinearLayoutManager(getActivity());
@@ -50,11 +53,17 @@ public class ListFragment extends Fragment {
         recyclerView.setHasFixedSize(true);
 
         fetchData("Bangladesh", "country", "2016");    // District demographics (population)
-//        fetchData("Dhaka", "city", String.valueOf(LocalDate.now()));            // Dhaka zone cases -- For covid
+        //fetchData("Dhaka", "city", String.valueOf(LocalDate.now()));  // Dhaka zone cases -- For covid
 
         return rootView;
     }
 
+    public void showOtherFragment() {
+        Fragment replacement_fragment = new BarChartFragment();
+        FragmentChangeListener fc=(FragmentChangeListener)getActivity();
+
+        fc.replaceFragment(replacement_fragment);
+    }
 
     protected void populateList(JSONObject inputJson) {
         // Set the adapter to show the data in the recyclerview and parse json into list
@@ -128,5 +137,10 @@ public class ListFragment extends Fragment {
         });
 
         return caseList;    // Return the list created
+    }
+
+    @Override
+    public void onClick(View v) {
+        showOtherFragment(); //clicking the top linear layout will inflate the new BarChartFragment
     }
 }

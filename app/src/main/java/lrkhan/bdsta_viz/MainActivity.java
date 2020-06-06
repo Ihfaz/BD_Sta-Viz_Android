@@ -1,5 +1,7 @@
 package lrkhan.bdsta_viz;
 
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.view.MenuItem;
 
@@ -16,8 +18,8 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
  * on the navigation bar
  */
 
-
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements FragmentChangeListener {
+    FragmentTransaction transaction = getFragmentManager().beginTransaction();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,13 +42,11 @@ public class MainActivity extends AppCompatActivity {
                 public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                     // Instantiate a fragment class
                     Fragment fragment = null;
-
                     switch(item.getItemId()){
                         // Load MapFragment when user taps on Map button
                         case R.id.nav_map:
                             fragment = new MapFragment();
                             break;
-
                         // Load ListFragment when user taps on Map button
                         case R.id.nav_list:
                             fragment = new ListFragment();
@@ -58,4 +58,9 @@ public class MainActivity extends AppCompatActivity {
                     return true;
                 }
             };
+
+    @Override
+    public void replaceFragment(Fragment fragment) { //navigation fragment will be replaced by BarChartFragment
+        getSupportFragmentManager().beginTransaction().replace(R.id.frameLayout, fragment, fragment.toString()).commit();
+    }
 }
