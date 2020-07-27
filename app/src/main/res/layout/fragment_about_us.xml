@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.aboutUs.AboutUsFragment">
+
+    <ImageView
+        android:id="@+id/dev_rakeen"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="80dp"
+        android:src="@drawable/dev_rakeen"
+        app:layout_constraintBottom_toTopOf="@+id/dev_2"
+        app:layout_constraintEnd_toStartOf="@+id/dev_1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dev_section" />
+
+    <ImageView
+        android:id="@+id/prof_image"
+        android:layout_width="294dp"
+        android:layout_height="110dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/prof_dr_latifur"
+        app:layout_constraintBottom_toTopOf="@+id/professor_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/professor_ID" />
+
+    <TextView
+        android:id="@+id/professor_ID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="12dp"
+        android:text="@string/lab_director"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/prof_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/professor_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:text="@string/dr_latifur_khan"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/professor_email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/prof_image" />
+
+    <TextView
+        android:id="@+id/professor_website"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="@string/prof_website"
+        android:textSize="15sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/professor_email"
+        app:layout_constraintEnd_toStartOf="@+id/professor_email"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/professor_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/prof_email"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/dev_section"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/professor_website"
+        app:layout_constraintTop_toBottomOf="@+id/professor_name" />
+
+    <TextView
+        android:id="@+id/dev_section"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginBottom="1dp"
+        android:text="@string/application_developers"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/dev_rakeen"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/professor_email" />
+
+    <TextView
+        android:id="@+id/dev_1"
+        android:layout_width="0dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginLeft="108dp"
+        android:layout_marginTop="154dp"
+        android:layout_marginEnd="103dp"
+        android:layout_marginRight="103dp"
+        android:layout_marginBottom="155dp"
+        android:text="@string/name_md_rakeen_murtaza"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/dev_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/dev_rakeen"
+        app:layout_constraintStart_toStartOf="@+id/dev_rakeen"
+        app:layout_constraintTop_toTopOf="@+id/professor_name" />
+
+    <TextView
+        android:id="@+id/dev1_website"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="110dp"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/dev1_website"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/dev_rakeen"
+        app:layout_constraintTop_toTopOf="@+id/dev_1" />
+
+    <TextView
+        android:id="@+id/dev1_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="219dp"
+        android:layout_marginLeft="219dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/dev1_email"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/dev_rakeen"
+        app:layout_constraintTop_toTopOf="@+id/dev_1" />
+
+    <TextView
+        android:id="@+id/dev_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="34dp"
+        android:text="@string/salaam_sayeed"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/dev_3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dev_rakeen" />
+
+    <TextView
+        android:id="@+id/dev_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="28dp"
+        android:text="@string/khandakar_ashrafi_akbar"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/dev_4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dev_2" />
+
+    <TextView
+        android:id="@+id/dev_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="119dp"
+        android:text="@string/ihfaz_tajwar"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dev_3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

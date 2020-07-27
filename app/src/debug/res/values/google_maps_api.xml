@@ -1,0 +1,24 @@
+<resources>
+    <!--
+    TODO: Before you run your application, you need a Google Maps API key.
+
+    To get one, follow this link, follow the directions and press "Create" at the end:
+
+    https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=23:37:37:50:35:0C:F5:14:E5:C3:E7:A0:2E:68:02:BD:DD:DD:68:32%3Bcom.example.navigationdrawerexample.ui.home.mapFragment
+
+    You can also add your credentials to an existing key, using these values:
+
+    Package name:
+    bdsta_vizagment
+
+    SHA-1 certificate fingerprint:
+    23:37:37:50:35:0C:F5:14:E5:C3:E7:A0:2E:68:02:BD:DD:DD:68:32
+
+    Alternatively, follow the directions here:
+    https://developers.google.com/maps/documentation/android/start#get-key
+
+    Once you have your key (it starts with "AIza"), replace the "google_maps_key"
+    string in this file.
+    -->
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyDOjGAX7D9nt6zcfO8uJJ1poZPZd6B8vfE</string>
+</resources>

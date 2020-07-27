@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">BD Sta-Viz</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">BD Sta-Viz</string>
+    <string name="nav_header_subtitle">Latifur.Khan@utdallas.edu</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_recent_stats">Recent Statistics</string>
+    <string name="menu_about_app">About the App</string>
+    <string name="menu_about_us">About Us</string>
+    <string name="menu_map_fragment">Map Fragment</string>
+    <string name="menu_list_fragment">List Fragment</string>
+    <string name="title_activity_home_bottom_nav">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_activity_maps">Map</string>
+
+    <!--About Us links-->
+    <string name="prof_website"><a href="https://personal.utdallas.edu/~lkhan/">Visit Website</a></string>
+    <string name="lab_director">Lab Director:</string>
+    <string name="dr_latifur_khan">Dr. Latifur Khan</string>
+    <string name="dev1_website"><a href="https://www.linkedin.com/in/md-rakeen-murtaza-37b422149/">Visit Website</a></string>
+    <string name="application_developers">Application Developers:</string>
+    <string name="prof_email"><a href="mailto:Latifur.Khan@utdallas.edu">Email</a></string>
+    <string name="dev1_email"><a href="mailto:rakeen.murtaza.12@gmail.com">Email</a></string>
+    <string name="name_md_rakeen_murtaza">Name: Md Rakeen Murtaza</string>
+    <string name="salaam_sayeed">Name: Salaam Sayeed</string>
+    <string name="khandakar_ashrafi_akbar">Name: Khandakar Ashrafi Akbar</string>
+    <string name="ihfaz_tajwar">Name: Ihfaz Tajwar</string>
+</resources>

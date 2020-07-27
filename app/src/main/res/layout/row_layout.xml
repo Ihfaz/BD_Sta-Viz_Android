@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_marginStart="8dp"
+        android:textSize="20sp"
+        android:text="some location"/>
+
+    <TextView
+        android:id="@+id/n_cases"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:textSize="20sp"
+        android:text="9999999"/>
+
+</LinearLayout>
